@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class NewTest {
   @Test
   public void verifyTitle() {
-	  System.setProperty("webdriver.chrome.driver", "/Users/kedarkulkarni/Desktop/Sunsoft_IBM/Selenium Project/src/chromedriver");
+	  System.setProperty("webdriver.chrome.driver", "chromedriver");
       ChromeDriver driver = new ChromeDriver();
       driver.manage().window().maximize();
       driver.get("https://www.facebook.com");
@@ -24,7 +24,7 @@ public class NewTest {
   
   @Test
   public void verifyUrl() {
-	  System.setProperty("webdriver.gecko.driver", "/Users/kedarkulkarni/Desktop/Sunsoft_IBM/Selenium Project/src/geckodriver");
+	  System.setProperty("webdriver.gecko.driver", "geckodriver");
 	  FirefoxDriver driver = new FirefoxDriver();
 	  driver.manage().window().maximize();
 	  driver.get("https://www.google.com");
